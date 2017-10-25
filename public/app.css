@@ -1,0 +1,1057 @@
+body,
+html {
+  box-sizing: border-box;
+  font-family: Merriweather
+}
+
+body {
+  background: url(/img/9c7fc7ffbc53562bd22a5580b4245cafb0a68ee8/cream_pixels.png)
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit
+}
+
+#apps {
+  margin: -10px 0 0 -10px
+}
+
+section#intro p {
+  font-size: 1.3em;
+  width: 58%;
+  line-height: 1.5;
+  margin: 0 auto
+}
+
+.app-title {
+  font-family: Scada, cursive
+}
+
+.app-title p {
+  display: none
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both
+}
+
+.container {
+  margin-left: 0;
+  margin-right: 0
+}
+
+.pomodoro-app {
+  padding: .5em 0;
+  border-top: 1px solid #5aa69a;
+  border-left: 1px solid #5aa69a;
+  width: 49em;
+  float: left;
+  clear: both
+}
+
+.pomodoro-info h2 {
+  font-family: Scada, cursive;
+  display: none
+}
+
+.pomodoro-info p {
+  font-size: 1em;
+  display: none
+}
+
+.pomodoro-main {
+  color: #b84545
+}
+
+.heading {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  background: rgba(99, 99, 29, .57)
+}
+
+.measurement {
+  font-size: .9em;
+  text-transform: lowercase
+}
+
+.break-title {
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: 19%;
+  font-size: .95em
+}
+
+.timer-title {
+  text-align: center;
+  font-family: Scada, cursive;
+  color: #333;
+  margin-bottom: .4em
+}
+
+.session-title {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: .95em;
+  margin-left: 18%
+}
+
+#breakLength,
+#sessionLength {
+  font-size: 2.4em
+}
+
+.pomodoro-btn {
+  font-size: 1.2em;
+  margin-right: .3em
+}
+
+button#sessionStart {
+  margin: 0 -1em
+}
+
+.btnSide {
+  background-color: #fff;
+  border: 1px solid #9a7d54;
+  border-radius: 5px
+}
+
+.btnSide:hover {
+  background-color: #9a7d54;
+  color: #fff
+}
+
+#pomodoro {
+  text-align: center;
+  font-size: 4em;
+  border: 1px solid #9a7d54;
+  border-radius: 3.4em;
+  line-height: 1.5em;
+  margin-bottom: .2em
+}
+
+.button-middle {
+  background-color: #fff;
+  border: 1px solid #9a7d54;
+  border-radius: 3.125em;
+  margin-bottom: .3em
+}
+
+.button-middle:hover {
+  background-color: #9a7d54;
+  color: #fff
+}
+
+.js-app {
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 2em
+}
+
+a {
+  text-decoration: none;
+  color: #e91e63
+}
+
+a:hover {
+  color: #ec407a
+}
+
+#wiki {
+  float: left;
+  padding: .3em;
+  border-top: 1px solid #5aa69a;
+  padding-top: .6em;
+  text-align: center
+}
+
+.search-box-container {
+  margin-bottom: 10px;
+  margin-top: 1.7em
+}
+
+.search-box-text {
+  background-color: transparent;
+  padding: 10px;
+  width: 90%;
+  max-width: 300px;
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 300
+}
+
+.search-box-text:focus {
+  border-color: #e91e63;
+  outline: 0
+}
+
+.search-box-submit {
+  border: 1px solid #000;
+  background-color: #000;
+  cursor: pointer;
+  padding: 10px
+}
+
+.search-box-submit:active {
+  background-color: #a3a3a3
+}
+
+.search-box-submit:focus,
+.search-box-submitactive {
+  outline: 0
+}
+
+.random-text {
+  color: #000
+}
+
+.result-list {
+  width: 100%
+}
+
+.single-result {
+  color: #333;
+  text-decoration: none;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 5px;
+  text-align: left;
+  border: 3px solid #b3a7a7;
+  transition: .1s ease-out all
+}
+
+.single-result h3 {
+  font-size: 1.2em;
+  margin-bottom: .3em
+}
+
+.single-result p {
+  font-size: 1em
+}
+
+.single-result:hover {
+  color: #333;
+  border-color: #e91e63
+}
+
+.calc-title {
+  margin: .5em 0;
+  font-size: 1.7em
+}
+
+.calculator-key {
+  display: block;
+  background: 0 0;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent
+}
+
+button:active {
+  box-shadow: inset 0 0 80px 0 rgba(148, 157, 156, .25)
+}
+
+#calc-wrapper {
+  vertical-align: top;
+  border-left: 1px solid #5aa69a
+}
+
+#calc-app {
+  width: 24em;
+  height: 34em;
+  position: relative;
+  margin: .1em auto
+}
+
+#align-center {
+  width: 70%;
+  margin: 0 auto;
+  position: relative
+}
+
+#calculator {
+  width: 22.9em;
+  transform: scale(.85);
+  height: 101%;
+  background: #a07e7e;
+  margin: .5em auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 6px -6px #d2cccc
+}
+
+#wrapper #calculator {
+  box-shadow: 0 0 20px 0 #aaa
+}
+
+.calculator-display {
+  color: #fff;
+  background: #304c71;
+  line-height: 117px;
+  font-size: 3.2em;
+  flex: 1
+}
+
+.auto-scaling-text {
+  display: inline-block
+}
+
+.calculator-display .auto-scaling-text {
+  right: 18px;
+  top: -20px;
+  position: absolute;
+  transform-origin: right
+}
+
+.calculator-keypad {
+  height: 400px;
+  display: flex
+}
+
+#calculator .input-keys {
+  width: 240px
+}
+
+#calculator .function-keys {
+  display: flex
+}
+
+#calculator .digit-keys {
+  background: #a4f7ec;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse
+}
+
+.calculator-key {
+  width: 80px;
+  height: 80px;
+  border-top: 1px solid #777;
+  border-right: 1px solid #666;
+  text-align: center;
+  line-height: 80px
+}
+
+#calculator .function-keys .calculator-key {
+  font-size: 2em
+}
+
+#calculator .function-keys .key-multiply {
+  line-height: 50px
+}
+
+#calculator .digit-keys .calculator-key {
+  font-size: 2.25em
+}
+
+#calculator .digit-keys .key-0 {
+  width: 160px;
+  text-align: left;
+  padding-left: 32px
+}
+
+#calculator .digit-keys .key-dot {
+  padding-top: 1em;
+  font-size: .75em
+}
+
+#calculator .operator-keys .calculator-key {
+  color: #fff;
+  border-right: 0;
+  font-size: 3em
+}
+
+#calculator .function-keys {
+  background: #d7f7d2
+}
+
+#calculator .operator-keys {
+  background: #b7d058
+}
+
+.todo-wrapper {
+  width: 100%
+}
+
+#todo {
+  margin: auto;
+  width: 43em;
+  padding: 1.2em 0
+}
+
+.nav-pills {
+  font-family: Abel-Regular
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+.code {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin: 0 2px;
+  padding: 0 5px
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  margin: 0 0 2px;
+  padding: 0
+}
+
+h1 {
+  border-bottom: 1px solid #ddd;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0 0 15px;
+  padding: 0
+}
+
+h2 {
+  font-size: 2.1em
+}
+
+h3 {
+  font-size: 1.5em
+}
+
+h4 {
+  font-size: 1.2em
+}
+
+ul {
+  padding-left: 30px;
+  list-style: none
+}
+
+li.placeholder {
+  background: #f1edcd
+}
+
+li.placeholder:before {
+  content: "Drop here";
+  color: #807d6c
+}
+
+#playground {
+  margin-top: 75px
+}
+
+.debug {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 30px
+}
+
+.todo-filter {
+  margin-bottom: 25px
+}
+
+.todo-filter>li>a {
+  padding: 8px 12px;
+  font-size: 14px
+}
+
+#todoAdd {
+  margin-left: 40px
+}
+
+.todoField {
+  padding-left: 5px;
+  font-size: 14px;
+  width: 80%;
+  float: left
+}
+
+#newTodoField {
+  margin: 20px;
+  width: 75%
+}
+
+.newTodoCatalogField {
+  margin-bottom: 5px;
+  margin-left: 15px;
+  padding-left: 5px;
+  font-size: 14px;
+  width: 70%;
+  float: left
+}
+
+#todoSubmit {
+  margin-top: -5px
+}
+
+.todoTask {
+  margin-bottom: 20px
+}
+
+.todoName {
+  font-size: 20px;
+  border-bottom: 1px #d3d3d3 solid;
+  padding-bottom: 5px
+}
+
+.edit-in-place span {
+  cursor: pointer
+}
+
+.edit-in-place input {
+  display: none
+}
+
+.edit-in-place.active span {
+  display: none
+}
+
+.edit-in-place.active input {
+  display: inline-block
+}
+
+.label-default {
+  background: #777398
+}
+
+.form-control {
+  height: 32px
+}
+
+.list-group-item {
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  transition-duration: .3s;
+  transition-property: color, background-color
+}
+
+.button-bt {
+  background-color: #fff;
+  color: #000;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  transition-duration: .3s;
+  transition-property: background
+}
+
+.button-bt-default {
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative
+}
+
+.button-bt-default:before {
+  content: '';
+  position: absolute;
+  border: #fff solid 1px;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  opacity: 0;
+  transition-duration: .3s;
+  transition-property: opacity
+}
+
+.button-bt-default:active:before,
+.button-bt-default:focus:before,
+.button-bt-default:hover:before {
+  opacity: 1
+}
+
+.button-bt-primary {
+  background-color: #8c8996;
+  color: #fff
+}
+
+.nav-pills>li+li {
+  margin-left: 6px
+}
+
+.pull-right {
+  outline: 0
+}
+
+.nav>li>a.button-bt-primary:focus,
+.nav>li>a.button-bt-primary:hover {
+  background-color: #908aa3;
+  color: #fff
+}
+
+.button-bt-default {
+  background-color: #8ed2a8;
+  color: #fff
+}
+
+.nav>li>a.button-bt-default:focus,
+.nav>li>a.button-bt-default:hover {
+  background-color: #aaba9b;
+  color: #fff
+}
+
+.todo-list {
+  list-style: none;
+  font-family: Abel-Regular;
+  font-weight: 700
+}
+
+.todo-text {
+  margin-left: 10px;
+  font-size: 1.2em
+}
+
+.btn-default {
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  transition-duration: .5s;
+  transition-property: color, background-color
+}
+
+::-webkit-scrollbar {
+  width: 5px
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #aaa
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2e6da4
+}
+
+::-webkit-scrollbar-track {
+  border-width: 0
+}
+
+body {
+  text-align: center
+}
+
+.items_list {
+  margin-top: 50px;
+  text-align: left;
+  overflow: auto;
+  height: 13em
+}
+
+.items_list .check_btn {
+  background: 0 0;
+  float: left;
+  padding: 0;
+  margin-right: 6px;
+  background-color: #1a8067;
+  color: #fff;
+  padding: 0 2px;
+  border-radius: 100px
+}
+
+.btn {
+  font-size: 13px
+}
+
+i {
+  color: #fff
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #d0b2b2
+}
+
+.items_list .delete_btn {
+  visibility: hidden;
+  background: 0 0;
+  color: #a9a9a9;
+  border: none;
+  position: absolute;
+  padding: 0;
+  right: 7px;
+  margin-left: 5px
+}
+
+.delete_btn:hover {
+  color: #000
+}
+
+.list-group-item {
+  word-wrap: break-word;
+  cursor: pointer
+}
+
+.list-group-item:hover .delete_btn {
+  visibility: visible
+}
+
+.checked .check_btn {
+  background-color: #b8e2b7;
+  color: #fff;
+  padding: 0 2px;
+  border-radius: 100px
+}
+
+.check_btn:hover {
+  background-color: #39aa8e
+}
+
+.list-group-item>span {
+  font-size: 1.1em
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0
+}
+
+.left_count {
+  float: left
+}
+
+.left_count .label {
+  font-size: 16px;
+  margin-top: 5px;
+  display: block
+}
+
+.clear_completed {
+  float: right
+}
+
+.editableItem {
+  width: 93%;
+  height: 30px;
+  margin-top: -4px
+}
+
+.alert {
+  height: 35px;
+  padding-top: 7px;
+  width: 567px;
+  margin-top: -25px;
+  position: absolute;
+  cursor: pointer
+}
+
+.searchNoResult {
+  text-align: center;
+  margin-top: 10px
+}
+
+.input-group {
+  position: absolute;
+  width: 567px;
+  margin: 17px 16px
+}
+
+@media screen and (max-width:605px) {
+  .todo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+}
+
+@viewport {
+  user-zoom: fixed
+}
+
+@media (min-width:1098px) and (max-width:1198px) {
+  .pomodoro-app {
+    border: 0
+  }
+  #calc-wrapper {
+    border-left: 0
+  }
+  #wiki {
+    border-top: 0
+  }
+}
+
+@media (min-width:1095px) and (max-width:6000px) {
+  section#intro {
+    margin-top: 2em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #5aa69a
+  }
+  section#intro p {
+    margin-bottom: 2em
+  }
+  #calc-app .app-title,
+  #calc-app p {
+    display: none
+  }
+  .pomodoro-app {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #5aa69a
+  }
+  .break-title,
+  .session-title {
+    display: none
+  }
+  .result-list {
+    border-right: 1px solid #5aa69a;
+    border-bottom: 1px solid #5aa69a;
+    margin-left: 6px;
+    margin-top: -3px;
+    padding-bottom: 3px
+  }
+}
+
+@media (max-width:1096px) {
+  section#intro {
+    margin-top: 1em
+  }
+  section#intro p {
+    font-size: 1.2em;
+    width: 85%;
+    line-height: 1.5;
+    margin: 1em auto
+  }
+  .pomodoro-info .app-title {
+    display: block
+  }
+  .pomodoro-info p {
+    display: block
+  }
+  .items_list {
+    margin-top: 50px;
+    text-align: left;
+    overflow: auto;
+    height: 19em
+  }
+  #todo {
+    margin: 1em auto;
+    padding: 0
+  }
+  .todo-wrapper {
+    border-top: 1px solid #5aa69a;
+    border-bottom: 1px solid #5aa69a
+  }
+  .todo-wrapper.flexing {
+    display: block;
+    width: 100%;
+    margin-top: 2.5em
+  }
+  #calc-wrapper.flexing {
+    display: block;
+    width: 100%
+  }
+  #calc-app {
+    height: 35em
+  }
+  #calc-app .app-title {
+    margin-top: .6em
+  }
+  #calculator {
+    transform: scale(.95);
+    height: 100%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column
+  }
+  .calculator-display {
+    font-size: 4.2em
+  }
+  .calculator-display .auto-scaling-text {
+    top: -4px
+  }
+  #wiki {
+    width: 52em;
+    padding: 2em;
+    margin: 9em auto 2em auto;
+    border-bottom: 1px solid #5aa69a;
+    float: none;
+    text-align: center
+  }
+  #wiki.flexing {
+    display: block;
+    width: 100%
+  }
+  .js-app {
+    width: auto;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em
+  }
+  .pomodoro-app {
+    margin: 0 auto;
+    border: 0;
+    padding: 3em;
+    float: none;
+    clear: none;
+    width: 100%
+  }
+  .pomodoro-info {
+    margin-bottom: 1.5em
+  }
+}
+
+@media (min-width:300px) and (max-width:769px) {
+  .pomodoro-info .app-title {
+    display: block
+  }
+  .pomodoro-info p {
+    display: block
+  }
+  .col-sm-4 {
+    width: 100%;
+    float: left;
+    margin-bottom: 1em
+  }
+  .timer-text {
+    display: none
+  }
+  .col-sm-6.text-center:before {
+    content: 'Робоча сесія';
+    font-size: 1.2em
+  }
+  .col-sm-6.text-center:nth-child(2):before {
+    content: 'Перерва';
+    font-size: 1.2em
+  }
+  .todo-wrapper {
+    width: 85%;
+    margin: 3em auto
+  }
+  #todo {
+    width: 35em
+  }
+  #todo .input-group {
+    width: 33em
+  }
+  .alert {
+    width: 33em;
+    height: 4em
+  }
+  .left_count {
+    float: none;
+    width: 50%;
+    margin: 0 auto
+  }
+  .left_count .label {
+    margin-bottom: 1.5em
+  }
+  #wiki {
+    width: 80%
+  }
+}
+
+@media screen and (max-width:605px) {
+  section#intro h2 {
+    font-size: 2.2em
+  }
+  section#intro p {
+    width: auto;
+    font-size: 1.2em
+  }
+  .todo-wrapper {
+    display: block
+  }
+  #todo {
+    width: 28em
+  }
+  #todo .input-group {
+    width: 26em
+  }
+  .alert {
+    width: 26em;
+    height: 4em
+  }
+}
+
+@media screen and (max-width:485px) {
+  .app-title {
+    font-size: 2em
+  }
+  #todo {
+    width: 23em
+  }
+  #todo .input-group {
+    width: 21em
+  }
+  .alert {
+    width: 21em;
+    height: 4em
+  }
+  button.btn.check_btn {
+    font-size: 13px
+  }
+  .list-group-item>span {
+    font-size: 1.1em
+  }
+  .left_count {
+    float: none;
+    width: 60%;
+    margin: 0 auto
+  }
+  .clear_completed {
+    float: none;
+    margin-top: 1.7em
+  }
+}
+
+@media screen and (max-width:400px) {
+  #todo {
+    width: 21em
+  }
+  #todo .input-group {
+    width: 19em
+  }
+  .alert {
+    width: 19em;
+    height: 5.3em
+  }
+  .left_count {
+    width: 70%
+  }
+}
+
+@media screen and (max-width:360px) {
+  #todo {
+    width: 20em
+  }
+  #todo .input-group {
+    width: 18em
+  }
+  .alert {
+    width: 18em;
+    height: 5.3em
+  }
+}
+
+.flexing {
+  display: inline-block;
+  flex-grow: 1;
+  height: auto;
+  width: calc(100% * (1/2))
+}
+
+/*# sourceMappingURL=app.css.map*/

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Web Organizer</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <link href="//fonts.googleapis.com/css?family=Scada:700" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Merriweather:300,400,400i,700" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/app.css">
+  <script src="/vendor.js"></script>
+  <script src="/app.js"></script>
+  <script>
+    require('initialize');
+  </script>
+</head>
+
+<body>
+
+  <section id="intro">
+    <h2>Web Organizer</h2>
+    <p>Electronic organizer for everyone who want to be more productive in day-to-day tasks</p>
+  </section>
+
+  <section class="react-apps">
+    <div id="apps"></div>
+  </section>
+
+  <section class="js-app">
+
+    <div class="pomodoro-app container">
+      <div class="pomodoro-main row">
+        <div class="row timer-text">
+          <div class="col-sm-4">
+            <h2 class="break-title">Break
+              <span class="measurement">(min.)</span>
+            </h2>
+          </div>
+
+          <div class="col-sm-4">
+            <h2 class="timer-title">Timer</h2>
+          </div>
+
+          <div class="col-sm-4">
+            <h2 class="session-title">Working Session
+              <span class="measurement">(min.)</span>
+            </h2>
+          </div>
+        </div>
+
+
+        <div class="row timer-clock">
+          <div class="col-sm-4">
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-6 text-center">
+              <div id="breakLength">
+              </div>
+              <button class="pomodoro-btn btnSide" id="breakSubTime">-</button>
+              <button class="pomodoro-btn btnSide" id="breakAddTime">+</button>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="row">
+              <h1 class="pomodoro" id="pomodoro"></h1>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <button class="pomodoro-btn button-middle" id="sessionStart">Start Session</button>
+                <button class="pomodoro-btn button-middle left" id="sessionPause">Pause</button>
+                <button class="pomodoro-btn button-middle right" id="sessionReset">New Session</button>
+                <button class="pomodoro-btn button-middle" id="breakStart">Start</button>
+                <button class="pomodoro-btn button-middle left" id="breakPause">Pause</button>
+                <button class="pomodoro-btn button-middle right" id="breakReset">Reset</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="col-sm-6 text-center">
+              <div id="sessionLength">
+              </div>
+              <button class="pomodoro-btn btnSide" id="sessionTimeSubstract">-</button>
+              <button class="pomodoro-btn btnSide" id="sessionTimeAdd">+</button>
+            </div>
+            <div class="col-sm-6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./pomodoro.js" async></script>
+</body>
+</html>
