@@ -1,5 +1,3 @@
-// See http://brunch.io for documentation.
-
 npm: {
   styles: {
     bootstrap: ['dist/css/bootstrap.css']

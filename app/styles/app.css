@@ -930,11 +930,11 @@ i {
     display: none
   }
   .col-sm-6.text-center:before {
-    content: 'Робоча сесія';
+    content: 'Working Session';
     font-size: 1.2em
   }
   .col-sm-6.text-center:nth-child(2):before {
-    content: 'Перерва';
+    content: 'Break';
     font-size: 1.2em
   }
   .todo-wrapper {
