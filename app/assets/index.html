@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Web Organizer</title>
+  <!-- Links for external libraries and fonts -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
   <link href="//fonts.googleapis.com/css?family=Scada:700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Merriweather:300,400,400i,700" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
+  <!-- Main CSS File -->
   <link rel="stylesheet" href="/app.css">
+  <!-- External scripting -->
   <script src="/vendor.js"></script>
+  <!-- Main JS File -->
   <script src="/app.js"></script>
   <script>
     require('initialize');
@@ -20,18 +23,20 @@
 </head>
 
 <body>
-
+  <!-- Header -->
   <section id="intro">
     <h2>Web Organizer</h2>
-    <p>Electronic organizer for everyone who want to be more productive in day-to-day tasks</p>
+    <p>Electronic organizer for everyone who wants to be more productive in day-to-day tasks</p>
   </section>
-
+  <!-- / end of Header -->
   <section class="react-apps">
+    <!-- All React apps are located inside this div -->
     <div id="apps"></div>
   </section>
 
+  <!-- Pomodoro timer app, written in vanilla JavaScript -->
   <section class="js-app">
-
+    <!-- Main container -->
     <div class="pomodoro-app container">
       <div class="pomodoro-main row">
         <div class="row timer-text">
@@ -52,7 +57,7 @@
           </div>
         </div>
 
-
+        <!-- Timer clock -->
         <div class="row timer-clock">
           <div class="col-sm-4">
             <div class="col-sm-6">
@@ -80,6 +85,7 @@
                 <button class="pomodoro-btn button-middle right" id="breakReset">Reset</button>
               </div>
             </div>
+
           </div>
 
           <div class="col-sm-4">
@@ -93,10 +99,12 @@
             </div>
           </div>
         </div>
+        <!-- / end of Timer Clock -->
       </div>
     </div>
+    <!-- / end of Main Container -->
   </section>
-
+  <!-- Script for the JS app Pomodoro -->
   <script src="./pomodoro.js" async></script>
 </body>
 </html>
