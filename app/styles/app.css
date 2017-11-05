@@ -1,3 +1,7 @@
+/* --------------------
+  General Styling
+-------------------- */
+
 body,
 html {
   box-sizing: border-box;
@@ -17,6 +21,10 @@ body {
 #apps {
   margin: -10px 0 0 -10px;
 }
+
+/* --------------------
+  JS App: Podomoro 
+-------------------- */
 
 section#intro p {
   font-size: 1.3em;
@@ -153,6 +161,10 @@ button#sessionStart {
   margin-bottom: 2em;
 }
 
+/* --------------------
+  end of Podomoro 
+-------------------- */
+
 a {
   text-decoration: none;
   color: #e91e63;
@@ -161,6 +173,10 @@ a {
 a:hover {
   color: #ec407a;
 }
+
+/* --------------------
+  React App: Wikipedia
+-------------------- */
 
 #wiki {
   float: left;
@@ -244,6 +260,14 @@ a:hover {
   color: #333;
   border-color: #e91e63;
 }
+
+/* --------------------
+  end of Wikipedia
+-------------------- */
+
+/* --------------------
+  React App: Calculator
+-------------------- */
 
 .calc-title {
   margin: .5em 0;
@@ -382,6 +406,14 @@ button:active {
 #calculator .operator-keys {
   background: #b7d058;
 }
+
+/* --------------------
+  end of Calculator 
+-------------------- */
+
+/* --------------------
+  React App: Todo Tasks  
+-------------------- */
 
 .todo-wrapper {
   width: 100%;
@@ -769,6 +801,14 @@ i {
   margin: 17px 16px;
 }
 
+/* --------------------
+  end of Todo Tasks 
+-------------------- */
+
+/* --------------------
+  Media Queries: Responsiveness for all tipes of screens
+-------------------- */
+
 @media screen and (max-width: 605px) {
   .todo-wrapper {
     display: flex;
@@ -1045,9 +1085,14 @@ i {
   }
 }
 
+/* end of Responsiveness  */
+
 .flexing {
   display: inline-block;
   flex-grow: 1;
   height: auto;
   width: calc(100% * (1 / 2));
 }
+
+
+/*# sourceMappingURL=app.css.map*/
