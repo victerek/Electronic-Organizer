@@ -22,149 +22,6 @@ body {
   margin: -10px 0 0 -10px;
 }
 
-/* --------------------
-  JS App: Podomoro 
--------------------- */
-
-section#intro p {
-  font-size: 1.3em;
-  width: 58%;
-  line-height: 1.5;
-  margin: 0 auto;
-}
-
-.app-title {
-  font-family: Scada, cursive;
-}
-
-.app-title p {
-  display: none;
-}
-
-.clearfix::after {
-  content: '';
-  display: block;
-  height: 0;
-  clear: both;
-}
-
-.container {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.pomodoro-app {
-  padding: .5em 0;
-  border-top: 1px solid #5aa69a;
-  border-left: 1px solid #5aa69a;
-  width: 49em;
-  float: left;
-  clear: both;
-}
-
-.pomodoro-info h2 {
-  font-family: Scada, cursive;
-  display: none;
-}
-
-.pomodoro-info p {
-  font-size: 1em;
-  display: none;
-}
-
-.pomodoro-main {
-  color: #b84545;
-}
-
-.heading {
-  display: block;
-  width: 50%;
-  margin: 0 auto;
-  background: rgba(99, 99, 29, .57);
-}
-
-.measurement {
-  font-size: .9em;
-  text-transform: lowercase;
-}
-
-.break-title {
-  text-transform: uppercase;
-  text-align: right;
-  margin-right: 19%;
-  font-size: .95em;
-}
-
-.timer-title {
-  text-align: center;
-  font-family: Scada, cursive;
-  color: #333;
-  margin-bottom: .4em;
-}
-
-.session-title {
-  text-transform: uppercase;
-  text-align: left;
-  font-size: .95em;
-  margin-left: 18%;
-}
-
-#breakLength,
-#sessionLength {
-  font-size: 2.4em;
-}
-
-.pomodoro-btn {
-  font-size: 1.2em;
-  margin-right: .3em;
-}
-
-button#sessionStart {
-  margin: 0 -1em;
-}
-
-.btnSide {
-  background-color: #fff;
-  border: 1px solid #9a7d54;
-  border-radius: 5px;
-}
-
-.btnSide:hover {
-  background-color: #9a7d54;
-  color: #fff;
-}
-
-#pomodoro {
-  text-align: center;
-  font-size: 4em;
-  border: 1px solid #9a7d54;
-  border-radius: 3.4em;
-  line-height: 1.5em;
-  margin-bottom: .2em;
-}
-
-.button-middle {
-  background-color: #fff;
-  border: 1px solid #9a7d54;
-  border-radius: 3.125em;
-  margin-bottom: .3em;
-}
-
-.button-middle:hover {
-  background-color: #9a7d54;
-  color: #fff;
-}
-
-.js-app {
-  height: auto;
-  overflow: hidden;
-  margin-bottom: 2em;
-}
-
-/* --------------------
-  end of Podomoro 
--------------------- */
-
 a {
   text-decoration: none;
   color: #e91e63;
@@ -179,7 +36,6 @@ a:hover {
 -------------------- */
 
 #wiki {
-  float: left;
   padding: .3em;
   border-top: 1px solid #5aa69a;
   padding-top: .6em;
@@ -839,75 +695,90 @@ i {
     margin-bottom: 10px;
     border-bottom: 1px solid #5aa69a;
   }
+
   section#intro p {
     margin-bottom: 2em;
   }
+
   #calc-app .app-title,
   #calc-app p {
     display: none;
   }
+
   .pomodoro-app {
     padding-bottom: 9px;
     border-bottom: 1px solid #5aa69a;
   }
+
   .break-title,
   .session-title {
     display: none;
   }
+
   .result-list {
-    border-right: 1px solid #5aa69a;
-    border-bottom: 1px solid #5aa69a;
     margin-left: 6px;
     margin-top: -3px;
     padding-bottom: 3px;
   }
+
 }
 
 @media (max-width: 1096px) {
   section#intro {
     margin-top: 1em;
   }
+
   section#intro p {
     font-size: 1.2em;
     width: 85%;
     line-height: 1.5;
     margin: 1em auto;
   }
+
   .pomodoro-info .app-title {
     display: block;
   }
+
   .pomodoro-info p {
     display: block;
   }
+
   .items_list {
     margin-top: 50px;
     text-align: left;
     overflow: auto;
     height: 19em;
   }
+
   #todo {
     margin: 1em auto;
     padding: 0;
   }
+  
   .todo-wrapper {
     border-top: 1px solid #5aa69a;
     border-bottom: 1px solid #5aa69a;
   }
+
   .todo-wrapper.flexing {
     display: block;
     width: 100%;
     margin-top: 2.5em;
   }
+
   #calc-wrapper.flexing {
     display: block;
     width: 100%;
   }
+
   #calc-app {
     height: 35em;
   }
+
   #calc-app .app-title {
     margin-top: .6em;
   }
+
   #calculator {
     transform: scale(.95);
     height: 100%;
@@ -915,12 +786,15 @@ i {
     display: flex;
     flex-direction: column;
   }
+
   .calculator-display {
     font-size: 4.2em;
   }
+
   .calculator-display .auto-scaling-text {
     top: -4px;
   }
+
   #wiki {
     width: 52em;
     padding: 2em;
@@ -929,16 +803,19 @@ i {
     float: none;
     text-align: center;
   }
+
   #wiki.flexing {
     display: block;
     width: 100%;
   }
+
   .js-app {
     width: auto;
     height: auto;
     margin-top: 1em;
     margin-bottom: 1em;
   }
+
   .pomodoro-app {
     margin: 0 auto;
     border: 0;
@@ -947,56 +824,70 @@ i {
     clear: none;
     width: 100%;
   }
+
   .pomodoro-info {
     margin-bottom: 1.5em;
   }
+
 }
 
 @media (min-width: 300px) and (max-width: 769px) {
   .pomodoro-info .app-title {
     display: block;
   }
+
   .pomodoro-info p {
     display: block;
   }
+
   .col-sm-4 {
     width: 100%;
     float: left;
     margin-bottom: 1em;
   }
+
   .timer-text {
     display: none;
   }
+
   .col-sm-6.text-center::before {
     content: 'Working Session';
     font-size: 1.2em;
   }
+
   .col-sm-6.text-center:nth-child(2)::before {
     content: 'Break';
     font-size: 1.2em;
   }
+
   .todo-wrapper {
     width: 85%;
     margin: 3em auto;
   }
+
   #todo {
     width: 35em;
   }
+
   #todo .input-group {
     width: 33em;
   }
+
   .alert {
     width: 33em;
     height: 4em;
   }
+
   .left_count {
     float: none;
     width: 50%;
     margin: 0 auto;
   }
+
   .left_count .label {
     margin-bottom: 1.5em;
   }
+
   #wiki {
     width: 80%;
   }
@@ -1006,19 +897,24 @@ i {
   section#intro h2 {
     font-size: 2.2em;
   }
+
   section#intro p {
     width: auto;
     font-size: 1.2em;
   }
+
   .todo-wrapper {
     display: block;
   }
+
   #todo {
     width: 28em;
   }
+
   #todo .input-group {
     width: 26em;
   }
+
   .alert {
     width: 26em;
     height: 4em;
@@ -1029,27 +925,34 @@ i {
   .app-title {
     font-size: 2em;
   }
+
   #todo {
     width: 23em;
   }
+
   #todo .input-group {
     width: 21em;
   }
+
   .alert {
     width: 21em;
     height: 4em;
   }
+
   button.btn.check_btn {
     font-size: 13px;
   }
+
   .list-group-item > span {
     font-size: 1.1em;
   }
+
   .left_count {
     float: none;
     width: 60%;
     margin: 0 auto;
   }
+
   .clear_completed {
     float: none;
     margin-top: 1.7em;
@@ -1060,13 +963,16 @@ i {
   #todo {
     width: 21em;
   }
+
   #todo .input-group {
     width: 19em;
   }
+
   .alert {
     width: 19em;
     height: 5.3em;
   }
+
   .left_count {
     width: 70%;
   }
@@ -1076,9 +982,11 @@ i {
   #todo {
     width: 20em;
   }
+
   #todo .input-group {
     width: 18em;
   }
+
   .alert {
     width: 18em;
     height: 5.3em;
@@ -1089,7 +997,6 @@ i {
 
 .flexing {
   display: inline-block;
-  flex-grow: 1;
   height: auto;
   width: calc(100% * (1 / 2));
 }
